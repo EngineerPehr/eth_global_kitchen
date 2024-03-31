@@ -15,23 +15,23 @@
         <div class="fixed top-16 left-0 bottom-10 w-1/3 p-3">
             <h2 class="text-center text-4xl">Add Recipe</h2>
             <hr class="my-4"/>
-            <div class="border-2 rounded-md ">
-                <form>
-                    <div>
-                        <label for="name">Recipe Name:</label>
-                        <input name="name" type="text" />
+            <div class="border-2 rounded-md">
+                <form class="flex flex-col">
+                    <div class="flex flex-row justify-between my-2 mx-3">
+                        <label for="name" class="w-1/3 text-center">Recipe Name:</label>
+                        <input name="name" type="text" class="w-2/3 rounded-md bg-slate-700 shadow-md shadow-black"/>
                     </div>
-                    <div>
-                        <label for="ingredients">Ingredients:</label>
-                        <textarea name="ingredients"></textarea>
+                    <div class="flex flex-row justify-between my-2 mx-3">
+                        <label for="ingredients" class="w-1/3 text-center">Ingredients:</label>
+                        <textarea name="ingredients" class="w-2/3 h-32 rounded-md bg-slate-700 shadow-md shadow-black"></textarea>
                     </div>
-                    <div>
-                        <label for="instructions">Instructions:</label>
-                        <textarea name="instructions"></textarea>
+                    <div class="flex flex-row justify-between my-2 mx-3">
+                        <label for="instructions" class="w-1/3 text-center">Instructions:</label>
+                        <textarea name="instructions" class="w-2/3 h-32 rounded-md bg-slate-700 shadow-md shadow-black"></textarea>
                     </div>
-                    <div>
-                        <button type="submit">Submit</button>
-                        <button type="reset">Clear Form</button>
+                    <div class="flex flex-col">
+                        <button type="submit" class="border-2 rounded-md w-3/4 h-10 mx-auto my-2 bg-slate-700 shadow-md shadow-black">Submit</button>
+                        <button type="reset" class="border-2 rounded-md w-3/4 h-10 mx-auto mt-2 mb-3 bg-slate-700 shadow-md shadow-black">Clear Form</button>
                     </div>
                 </form>
             </div>

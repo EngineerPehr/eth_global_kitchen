@@ -12,7 +12,14 @@ contract RecipeBook {
 
     mapping(uint => Recipe) public recipes;
 
-    constructor() 
+    constructor() public {
+        createRecipe("Sample Recipe", "Magic, Faith, Hopes, Prayers", "Make it work. Somehow.");
+    }
+
+    function createRecipe(string memory _name, string memory _ingredients, string memory _instructions) public {
+        recipeCount ++;
+        recipes[recipeCount] = Recipe(recipeCount, _name, _ingredients, _instructions);
+    }
 
 
 }
